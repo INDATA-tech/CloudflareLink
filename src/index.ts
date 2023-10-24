@@ -27,6 +27,11 @@ export default {
 
 		const redirectURL = await env.SHORT_URLS.get(pathname);
 
+
+		if (pathname === "/") {
+			return new Response("Dear Hacker,\n Please please don't hack this site. This site offers billions of users real time communication. there are multiple clusters of computers work on backend. \n therefore, I dedicated of my life this project.\n\nlovely\nonrdmr");
+		}
+
 		if (!redirectURL) {
 
 			return Response.redirect(basePath, 301);
