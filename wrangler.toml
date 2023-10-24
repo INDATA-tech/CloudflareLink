@@ -2,7 +2,8 @@ name = "short-it"
 node_compat = true
 main = "src/index.ts"
 compatibility_date = "2023-10-24"
+routes=[{pattern="www.onrdmr.com/*", zone_name = "onrdmr.com"}, {pattern="onrdmr.com/*", zone_name = "onrdmr.com"}]
 
 kv_namespaces = [
-  { binding = "SHORT_URLS", id = "029d374ebd984e19b0bb98e37ab1a95e", preview_id = "99a72876e5f84cf58de722b1c2080604" }
+  { binding = "SHORT_URLS", id =  "1fef1dd73b63431eb66f2b7759d0e883" , preview_id = "09dd2b330eef4989bfb94fefed2907c2" }
 ]

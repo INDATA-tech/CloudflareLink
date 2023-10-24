@@ -1,4 +1,3 @@
-const basePath = "https://http.cat/403";
 /**
  * Welcome to Cloudflare Workers! This is your first worker.
  *
@@ -13,7 +12,7 @@ export interface Env {
 	SHORT_URLS: KVNamespace;
 }
   
-
+const basePath = "https://http.cat/403";
 
 export default {
 	async fetch(
@@ -31,7 +30,7 @@ export default {
 		if (pathname === "/") {
 			return new Response("Dear Hacker,\n Please please don't hack this site. This site offers billions of users real time communication. there are multiple clusters of computers work on backend. \n therefore, I dedicated of my life this project.\n\nlovely\nonrdmr");
 		}
-
+		
 		if (!redirectURL) {
 
 			return Response.redirect(basePath, 301);
